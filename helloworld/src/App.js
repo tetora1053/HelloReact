@@ -1,4 +1,6 @@
 import React from 'react';
+import Time from './Time';
+import Button from './Button';
 
 class App extends React.Component{
 
@@ -25,45 +27,6 @@ class App extends React.Component{
     );
   }
 
-  
-}
-
-class Button extends React.Component {
-
-  constructor(props){
-    super(props);
-    this.getTime = this.getTime.bind(this);
-  }
-
-  getTime(){
-    console.log(Date());
-    this.props.setTime(Date());
-  }
-
-  render() {
-    return (
-      <div>
-        <button className="button" onClick={this.getTime}>
-          getDate
-        </button>
-      </div>
-    );
-  }
-}
-
-class Time extends React.Component {
-  
-  constructor(props){
-    super(props);
-  }
-
-  render() {
-    return (
-      <div>
-      <p>本日は{this.props.time}です。</p>
-      </div>
-    );
-  }
 }
 
 

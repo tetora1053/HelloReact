@@ -1,4 +1,5 @@
 import React from 'react';
+import './Time.css';
 
 class Time extends React.Component {
   
@@ -8,7 +9,7 @@ class Time extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="Time">
       <p>本日は{this.props.time}です。</p>
       </div>
     );

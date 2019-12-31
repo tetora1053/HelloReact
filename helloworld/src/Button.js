@@ -1,6 +1,8 @@
 import React from 'react';
 import Count from './Count'
 
+import './button.css';
+
 class Button extends React.Component {
 
   constructor(props){
